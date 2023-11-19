@@ -1,0 +1,76 @@
+-Cùng cấp -./-
+-truy xuất ra ngoài 1 cấp _../_
+-Thuộc tính _attribute_
+-thẻ tag
+-CSS nó sẽ chạy từ trên xuống dưới, nếu có 2 đoạn code cùng thực hiện 1 chức năng
+- _div_ là thẻ block, có độ rộng 100% phần tử chứa nó, lưu ý: chưa nói tới vấn đề khi sử dụng Css
+- _div_ thường được dùng rất nhiều, khi chia layout, gom 1 khối nào đó
+- _img_ là thẻ inline, tự đóng dùng để hiển thị hình ảnh với 2 thuộc tính 'src' và 'alt'
+- _alt_ viết tắt của 'alternate text' nó dùng trong việc SEO, khi hình ảnh bị lỗi hoặc sai đường dẫn thì _alt_ sẽ hiển thị để người dùng biết hình ảnh đó nói về cái gì
+- _span_ là thẻ inline nó thường được dùng cho những đoạn chữ ngắn
+- _class_ là thuộc tính dùng để sử dụng các class cho thẻ, sau đó dùng để styles trong CSS
+- Viết đặt tên class khá là nan giải, khó, không nên đặt tên TV, nên đặt tiếng anh ngắn gọn dễ hiểu
+- thẻ tiêu đề: h1, h2, h4, h5, h6
+- h1: Mỗi trang chỉ có tối đa 1 thẻ h1 mà thôi, thẻ này thường được dùng cho các tiêu đề lớn của trang
+- h2: dùng được nhiều, thường được cho những block to
+- h3: Dùng được nhiều, thường được cho những Block nhỏ
+- h4,h5,h6: Tương ứng cho những tiêu đề nhỏ hơn
+- _thẻ a_: là thẻ inline, chắc chắn là dùng cho liên kết, nó có 3 thuộc tính hay dùng là 'href', 'target, và 'rel'
+- Khi dùng target có giá trị là _blank thì thẻ a nên thêm thuộc tính rel="noopener noreferrer"
+- Fonts chữ:
+    - Sẽ có sẵn ở GG Fonts
+    - Không có ở GG Fonts mà được mua, tải trên mạng về máy
+- _font-weight_ : độ đậm nhạt của chữ, normal, bold, bolder , extra bold, light, thin, regular
+- _font_family_ :Thiết lập font chữ, truyền vào là font name(tên của font chữ)
+- 'sans-serif': Chữ không có chân
+- 'serif': chữ có chân
+- CSS Selectors: tag, class, id, attribute
+- Tags: h1, h2, h3, h4, div, body, span, a
+- Class: .name, .tour, .tour-header
+- Id: #header, #content
+- Attribute: Later \*\
+- Special selector: \* chọn toàn bộ selector
+- Cấu trúc 1 đoạn Css
+    CssSelector{
+        proper: value;
+    }
+    h1,.name,#header,input[type="email"]{
+        font-family: 'Inter'
+    }
+- _user agent stylesheet_: CSS mặc định của trình duyệt, mỗi trình duyệt sẽ có CSS mặc định khác nhau
+- _CSS reset_: Dùng để reset Css mặc định của các trình duyệt, và bắt buộc phải có đầu tiên
+-_width_: độ rộng
+- _height_: Chiều cao
+- _border_: Viền 
+- _color_
+- _background-color_
+- _Mã màu_: hexa(#ffa400), orange, rgb(0,0,0),
+rgba(0,0,0,5)
+- alpha(opacity): 0->1
+- _box-sizing_: margin, border, width, height, đơn vị px
+    - content-box: Độ rộng lúc này của 1 khối sẽ bằng Width+ padding(Left + right)+ border(left + right)
+    - _border_box_: độ rộng lúc này của 1 khối sẽ bao gồm padding và border, nên áp dụng cho toàn khối (\*)
+- _shorthand_: viết rút gọn
+- Đơn vị: px, em , rem, vw, vh, %
+- _text-decoration_:Gạch dưới của thẻ a, 'none', 'underline', 'overline', 'line-through'
+- border-radius: Độ bo góc của khối, càng lớn thè càng bo góc, nếu hình vuông mà có bo góc lớn thì sẽ tạo ra hình tròn, còn nếu là hình chữ nhật có bo góc thì tạo ra elip
+    -border-radius
+- line-height là khoảng cách của các dòng chữ
+- Khi những thẻ inline nằm cạnh nhau thì nó sẽ nằm trên 1 , ngược lại những thẻ block thì nó sẽ tạo ra hàng mới
+- _display_: block, inline, inline-block, none, flex, grid
+    - 'block': Biến thành thẻ block
+    - 'inline': Biến thành thẻ inline, nó sẽ bị hạn chế thuộc tính CSS liên quan tới box-sizing như là padding-top, padding-bottom, margin-top, margin-bottom
+    - 'inline-block': Biến thành thẻ inline-block, là sự kết hợp của inline và block khi các thẻ có thuộc tính inline-block nó sẽ kế thừa đặc tính inline tức là nằm cạnh nhau thì sẽ nằm trên 1 hàng, có độ rộng bằng nội dung mà nó chưa, không bị hạn chế CSS
+    - none: Ẩn luôn, không thấy không nhấn được
+    - 'flex': Dùng rất nhiều hiện nay, nếu master được nó thì code layout vô tư
+-_min-width_: độ rộng tối thiểu ví dụ 100px ->>=100px
+- _max-width_: độ rộng tối đa, ví dụ 100px -> <=100px
+- _flexbox_: áp dụng thuộc tính display: flex vào phần tử mình muốn dàn layout
+- _align-item_: stretch ; kéo các cột cho bằng nhau
+- _align-item_: flex-start/end/center: kéo cột lên trên,xuống dưới, giữa
+- _calc_: Hàm dùng để tính toán , * / + -
+- _component_: mục đính là có thể tái sử dụng và có thể tùy chỉnh 1 chỗ để sử dụng nhiều nơi
+- _pug_
+- _sass_
+- _javacript_
+-
